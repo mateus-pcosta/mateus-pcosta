@@ -14,7 +14,9 @@
 ⬛ Gero resultados significativos criando soluções que otimizem tempo, elevem a qualidade do código e transformem dados em insights estratégicos para a tomada de decisão.
 <br>
 🔲 Dedicado e comprometido, meu objetivo é me tornar Engenheiro de Dados — com bases sólidas em pipelines e arquitetura — e evoluir para a Ciência de Dados, aplicando modelos preditivos e IA para gerar impacto real.
+#
 
+<img src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=mateus-pcosta&theme=apprentice" width="64%" />&nbsp;<img src="http://github-profile-summary-cards.vercel.app/api/cards/stats?username=mateus-pcosta&theme=apprentice" width="31%" />
 
 #
 <img align="right" src=".github/workflows/gatodev - Editado.png" alt="Anime GIF" width="350"/>
