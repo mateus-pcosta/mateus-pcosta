@@ -52,7 +52,7 @@
 
 ###
 <p align="center">
-  <img src="https://raw.githubusercontent.com/mateus-pcosta/mateus-pcosta/main/assets/clock.svg" alt="EVERY SECOND COUNTS" />
+  <img src="https://raw.githubusercontent.com/mateus-pcosta/mateus-pcosta/main/assets/clock.svg" alt="EVERY SECOND COUNTS" width="440" />
 </p>
 
 ###
