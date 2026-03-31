@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 210" width="100%">
+  <rect width="520" height="210" fill="#121212"/>
+  <rect x="10" y="10" width="500" height="128" rx="4" fill="#060606" stroke="#323232" stroke-width="2"/>
+  <rect x="10" y="144" width="500" height="56" rx="4" fill="#0E2240" stroke="#323232" stroke-width="2"/>
+
+  <rect x="88"    y="19"            width="54"      height="11"              rx="2" fill="#001C26"/>
+  <rect x="142" y="30"          width="11"               height="35"    rx="2" fill="#00B9E1"/>
+  <rect x="142" y="71"      width="11"               height="35"    rx="2" fill="#00B9E1"/>
+  <rect x="88"    y="107"       width="54"      height="11"              rx="2" fill="#001C26"/>
+  <rect x="77"      y="71"      width="11"               height="35"    rx="2" fill="#001C26"/>
+  <rect x="77"      y="30"          width="11"               height="35"    rx="2" fill="#001C26"/>
+  <rect x="88"    y="63"  width="54"      height="11"              rx="2" fill="#001C26"/>
+  <rect x="176"    y="19"            width="54"      height="11"              rx="2" fill="#00B9E1"/>
+  <rect x="230" y="30"          width="11"               height="35"    rx="2" fill="#00B9E1"/>
+  <rect x="230" y="71"      width="11"               height="35"    rx="2" fill="#00B9E1"/>
+  <rect x="176"    y="107"       width="54"      height="11"              rx="2" fill="#00B9E1"/>
+  <rect x="165"      y="71"      width="11"               height="35"    rx="2" fill="#00B9E1"/>
+  <rect x="165"      y="30"          width="11"               height="35"    rx="2" fill="#00B9E1"/>
+  <rect x="176"    y="63"  width="54"      height="11"              rx="2" fill="#001C26"/>
+  <circle cx="263" cy="51" r="5" fill="#00B9E1"/>
+  <circle cx="263" cy="86" r="5" fill="#00B9E1"/>
+  <rect x="290"    y="19"            width="54"      height="11"              rx="2" fill="#00B9E1"/>
+  <rect x="344" y="30"          width="11"               height="35"    rx="2" fill="#00B9E1"/>
+  <rect x="344" y="71"      width="11"               height="35"    rx="2" fill="#00B9E1"/>
+  <rect x="290"    y="107"       width="54"      height="11"              rx="2" fill="#00B9E1"/>
+  <rect x="279"      y="71"      width="11"               height="35"    rx="2" fill="#00B9E1"/>
+  <rect x="279"      y="30"          width="11"               height="35"    rx="2" fill="#00B9E1"/>
+  <rect x="290"    y="63"  width="54"      height="11"              rx="2" fill="#001C26"/>
+  <rect x="378"    y="19"            width="54"      height="11"              rx="2" fill="#00B9E1"/>
+  <rect x="432" y="30"          width="11"               height="35"    rx="2" fill="#00B9E1"/>
+  <rect x="432" y="71"      width="11"               height="35"    rx="2" fill="#00B9E1"/>
+  <rect x="378"    y="107"       width="54"      height="11"              rx="2" fill="#00B9E1"/>
+  <rect x="367"      y="71"      width="11"               height="35"    rx="2" fill="#001C26"/>
+  <rect x="367"      y="30"          width="11"               height="35"    rx="2" fill="#00B9E1"/>
+  <rect x="378"    y="63"  width="54"      height="11"              rx="2" fill="#00B9E1"/>
+
+  <text x="260" y="179"
+        text-anchor="middle"
+        font-family="'DejaVu Sans', Arial, sans-serif"
+        font-weight="bold"
+        font-size="19"
+        letter-spacing="3"
+        fill="#D2D7DC">EVERY SECOND COUNTS</text>
+</svg>
