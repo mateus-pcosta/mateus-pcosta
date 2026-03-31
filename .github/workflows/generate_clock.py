@@ -32,4 +32,6 @@ bbox2 = draw.textbbox((0, 0), phrase, font=font_text)
 pw = bbox2[2] - bbox2[0]
 draw.text(((W - pw) // 2, 68), phrase, font=font_text, fill=(255, 255, 255))
 
-img.save(".github/workflows/clock.png")
+import os
+os.makedirs("assets", exist_ok=True)
+img.save("assets/clock.png")
