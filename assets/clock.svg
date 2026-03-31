@@ -1,44 +1,84 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 210" width="100%">
-  <rect width="520" height="210" fill="#121212"/>
-  <rect x="10" y="10" width="500" height="128" rx="4" fill="#060606" stroke="#323232" stroke-width="2"/>
-  <rect x="10" y="144" width="500" height="56" rx="4" fill="#0E2240" stroke="#323232" stroke-width="2"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 148" width="100%">
+  <defs>
 
-  <rect x="88"    y="19"            width="54"      height="11"              rx="2" fill="#001C26"/>
-  <rect x="142" y="30"          width="11"               height="35"    rx="2" fill="#00B9E1"/>
-  <rect x="142" y="71"      width="11"               height="35"    rx="2" fill="#00B9E1"/>
-  <rect x="88"    y="107"       width="54"      height="11"              rx="2" fill="#001C26"/>
-  <rect x="77"      y="71"      width="11"               height="35"    rx="2" fill="#001C26"/>
-  <rect x="77"      y="30"          width="11"               height="35"    rx="2" fill="#001C26"/>
-  <rect x="88"    y="63"  width="54"      height="11"              rx="2" fill="#001C26"/>
-  <rect x="176"    y="19"            width="54"      height="11"              rx="2" fill="#00B9E1"/>
-  <rect x="230" y="30"          width="11"               height="35"    rx="2" fill="#00B9E1"/>
-  <rect x="230" y="71"      width="11"               height="35"    rx="2" fill="#00B9E1"/>
-  <rect x="176"    y="107"       width="54"      height="11"              rx="2" fill="#00B9E1"/>
-  <rect x="165"      y="71"      width="11"               height="35"    rx="2" fill="#00B9E1"/>
-  <rect x="165"      y="30"          width="11"               height="35"    rx="2" fill="#00B9E1"/>
-  <rect x="176"    y="63"  width="54"      height="11"              rx="2" fill="#001C26"/>
-  <circle cx="263" cy="51" r="5" fill="#00B9E1"/>
-  <circle cx="263" cy="86" r="5" fill="#00B9E1"/>
-  <rect x="290"    y="19"            width="54"      height="11"              rx="2" fill="#00B9E1"/>
-  <rect x="344" y="30"          width="11"               height="35"    rx="2" fill="#00B9E1"/>
-  <rect x="344" y="71"      width="11"               height="35"    rx="2" fill="#00B9E1"/>
-  <rect x="290"    y="107"       width="54"      height="11"              rx="2" fill="#00B9E1"/>
-  <rect x="279"      y="71"      width="11"               height="35"    rx="2" fill="#00B9E1"/>
-  <rect x="279"      y="30"          width="11"               height="35"    rx="2" fill="#00B9E1"/>
-  <rect x="290"    y="63"  width="54"      height="11"              rx="2" fill="#001C26"/>
-  <rect x="378"    y="19"            width="54"      height="11"              rx="2" fill="#00B9E1"/>
-  <rect x="432" y="30"          width="11"               height="35"    rx="2" fill="#00B9E1"/>
-  <rect x="432" y="71"      width="11"               height="35"    rx="2" fill="#00B9E1"/>
-  <rect x="378"    y="107"       width="54"      height="11"              rx="2" fill="#00B9E1"/>
-  <rect x="367"      y="71"      width="11"               height="35"    rx="2" fill="#001C26"/>
-  <rect x="367"      y="30"          width="11"               height="35"    rx="2" fill="#00B9E1"/>
-  <rect x="378"    y="63"  width="54"      height="11"              rx="2" fill="#00B9E1"/>
+    <!-- white glow for active segments -->
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
 
-  <text x="260" y="179"
+    <!-- metallic border gradient (top-lit) -->
+    <linearGradient id="metal" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#525252"/>
+      <stop offset="30%"  stop-color="#222222"/>
+      <stop offset="70%"  stop-color="#1a1a1a"/>
+      <stop offset="100%" stop-color="#3a3a3a"/>
+    </linearGradient>
+
+    <!-- clock face: deep black with faint bottom vignette -->
+    <linearGradient id="clock-face" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#060606"/>
+      <stop offset="100%" stop-color="#020202"/>
+    </linearGradient>
+
+    <!-- text panel: dark charcoal -->
+    <linearGradient id="text-face" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#1c1c1c"/>
+      <stop offset="100%" stop-color="#111111"/>
+    </linearGradient>
+
+    <!-- scanline pattern for realism -->
+    <pattern id="scanlines" x="0" y="0" width="1" height="3" patternUnits="userSpaceOnUse">
+      <rect width="1" height="2" fill="none"/>
+      <rect y="2" width="1" height="1" fill="#000" opacity="0.08"/>
+    </pattern>
+
+  </defs>
+
+  <!-- outer shell -->
+  <rect width="440" height="148" rx="6" fill="#0a0a0a"/>
+
+  <!-- clock panel: metallic frame -->
+  <rect x="6" y="6" width="428" height="96" rx="5" fill="url(#metal)"/>
+  <!-- clock panel: inner face -->
+  <rect x="11" y="11" width="418" height="86" rx="3" fill="url(#clock-face)"/>
+  <!-- scanlines overlay -->
+  <rect x="11" y="11" width="418" height="86" rx="3" fill="url(#scanlines)"/>
+
+  <!-- text panel: metallic frame -->
+  <rect x="6" y="102" width="428" height="40" rx="5" fill="url(#metal)"/>
+  <!-- text panel: inner face -->
+  <rect x="11" y="107" width="418" height="30" rx="3" fill="url(#text-face)"/>
+
+  <!-- dim (inactive) segments -->
+  <g fill="#0e0e0e">
+    <rect x="71" y="14" width="48" height="8" rx="2"/><rect x="71" y="76" width="48" height="8" rx="2"/><rect x="63" y="52" width="8" height="24" rx="2"/><rect x="63" y="22" width="8" height="24" rx="2"/><rect x="71" y="45" width="48" height="8" rx="2"/><rect x="147" y="45" width="48" height="8" rx="2"/><rect x="293" y="52" width="8" height="24" rx="2"/><rect x="237" y="22" width="8" height="24" rx="2"/><rect x="313" y="52" width="8" height="24" rx="2"/><rect x="313" y="22" width="8" height="24" rx="2"/>
+  </g>
+
+  <!-- active segments with glow -->
+  <g fill="#F0F0F0" filter="url(#glow)">
+    <rect x="119" y="22" width="8" height="24" rx="2"/><rect x="119" y="52" width="8" height="24" rx="2"/><rect x="147" y="14" width="48" height="8" rx="2"/><rect x="195" y="22" width="8" height="24" rx="2"/><rect x="195" y="52" width="8" height="24" rx="2"/><rect x="147" y="76" width="48" height="8" rx="2"/><rect x="139" y="52" width="8" height="24" rx="2"/><rect x="139" y="22" width="8" height="24" rx="2"/><rect x="245" y="14" width="48" height="8" rx="2"/><rect x="293" y="22" width="8" height="24" rx="2"/><rect x="245" y="76" width="48" height="8" rx="2"/><rect x="237" y="52" width="8" height="24" rx="2"/><rect x="245" y="45" width="48" height="8" rx="2"/><rect x="321" y="14" width="48" height="8" rx="2"/><rect x="369" y="22" width="8" height="24" rx="2"/><rect x="369" y="52" width="8" height="24" rx="2"/><rect x="321" y="76" width="48" height="8" rx="2"/><rect x="321" y="45" width="48" height="8" rx="2"/>
+  </g>
+
+  <!-- colon -->
+  <g fill="#F0F0F0" filter="url(#glow)">
+    <circle cx="223" cy="36" r="4"/>
+    <circle cx="223" cy="61" r="4"/>
+  </g>
+
+  <!-- highlight: top edge reflection on clock panel -->
+  <rect x="11" y="11" width="418" height="2" rx="1" fill="#fff" opacity="0.04"/>
+
+  <!-- label -->
+  <text x="220" y="128"
         text-anchor="middle"
-        font-family="'DejaVu Sans', Arial, sans-serif"
+        font-family="Arial, Helvetica, sans-serif"
         font-weight="bold"
-        font-size="19"
-        letter-spacing="3"
-        fill="#D2D7DC">EVERY SECOND COUNTS</text>
+        font-size="13"
+        letter-spacing="5"
+        fill="#909090">EVERY SECOND COUNTS</text>
+
 </svg>
