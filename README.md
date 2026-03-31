@@ -52,5 +52,5 @@
 
 ###
 <p align="center">
-<i>"EVERY SECONDS COUNTS."</i> 
+<i>"EVERY SECOND COUNTS."</i> 
 </p>
