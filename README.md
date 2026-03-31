@@ -52,5 +52,10 @@
 
 ###
 <p align="center">
+  <img src="https://raw.githubusercontent.com/mateus-pcosta/mateus-pcosta/main/.github/workflows/clock.png" alt="Horário de Brasília" />
+</p>
+
+###
+<p align="center">
 <i>"EVERY SECOND COUNTS."</i> 
 </p>
