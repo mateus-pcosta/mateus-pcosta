@@ -52,5 +52,5 @@
 
 ###
 <p align="center">
-<i>"A tecnologia, quando bem aplicada, tem o poder de revolucionar processos e criar valor real."</i> 
+<i>"EVERY SECONDS COUNTS."</i> 
 </p>
