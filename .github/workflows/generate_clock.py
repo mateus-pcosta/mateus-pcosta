@@ -1,20 +1,35 @@
+from PIL import Image, ImageDraw, ImageFont
 from datetime import datetime, timezone, timedelta
 
-tz = timezone(timedelta(hours=-3))  # Horário de Brasília
+tz = timezone(timedelta(hours=-3))
 now = datetime.now(tz)
 time_str = now.strftime("%H:%M")
 
-svg = f'''<svg width="320" height="110" xmlns="http://www.w3.org/2000/svg">
-  <!-- Retângulo do relógio -->
-  <rect width="320" height="55" rx="6" ry="6" fill="black"/>
-  <text x="160" y="38" font-family="Courier New, monospace" font-size="32" font-weight="bold"
-        fill="white" text-anchor="middle" letter-spacing="6">{time_str}</text>
+W, H = 320, 110
 
-  <!-- Retângulo da frase -->
-  <rect y="58" width="320" height="52" rx="6" ry="6" fill="black"/>
-  <text x="160" y="90" font-family="Courier New, monospace" font-size="14" font-weight="bold"
-        fill="white" text-anchor="middle" letter-spacing="3">EVERY SECOND COUNTS</text>
-</svg>'''
+img = Image.new("RGB", (W, H), color=(0, 0, 0))
+draw = ImageDraw.Draw(img)
 
-with open(".github/workflows/clock.svg", "w") as f:
-    f.write(svg)
+# Linha divisória
+draw.rectangle([0, 57, W, 59], fill=(40, 40, 40))
+
+# Tenta usar fonte monoespaçada, senão usa padrão
+try:
+    font_clock = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSansMono-Bold.ttf", 42)
+    font_text  = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSansMono-Bold.ttf", 15)
+except:
+    font_clock = ImageFont.load_default()
+    font_text  = ImageFont.load_default()
+
+# Hora
+bbox = draw.textbbox((0, 0), time_str, font=font_clock)
+tw = bbox[2] - bbox[0]
+draw.text(((W - tw) // 2, 6), time_str, font=font_clock, fill=(255, 255, 255))
+
+# Frase
+phrase = "EVERY SECOND COUNTS"
+bbox2 = draw.textbbox((0, 0), phrase, font=font_text)
+pw = bbox2[2] - bbox2[0]
+draw.text(((W - pw) // 2, 68), phrase, font=font_text, fill=(255, 255, 255))
+
+img.save(".github/workflows/clock.png")
