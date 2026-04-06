@@ -1,4 +1,4 @@
-[![Typing SVG](https://readme-typing-svg.herokuapp.com/?font=Anton&color=ffffff&size=35&center=true&vCenter=true&width=1000&lines=[=++Seja+bem-vindo+ao+meu+perfil++=])](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.herokuapp.com/?font=Anton&color=ffffff&size=35&center=true&vCenter=true&width=1000&lines=++Seja+bem-vindo+ao+meu+perfil++)](https://git.io/typing-svg)
 #
 <p align="center">
   <img src=".github/workflows/MATEUS PESSOA.gif" />
