@@ -7,13 +7,13 @@
 
 #
 
-⬛ Atuo como Analista de Sistemas na Secretaria de Fazenda do Piauí e Desenvolvedor Python na Secretaria de Segurança Pública, com foco em automação de processos e análise de dados.
+⬛ Atuo como Desenvolvedor Fullstack na Secretaria de Fazenda do Piauí e Desenvolvedor Python na Secretaria de Segurança Pública, com foco em desenvolvimento de aplicações web, automação de processos e análise de dados.
 <br>
 🔲 Sou estudante de Engenharia de Software (ICev) e Análise e Desenvolvimento de Sistemas (UEMA), alinhando teoria e prática no dia a dia.
 <br>
 ⬛ Gero resultados significativos criando soluções que otimizem tempo, elevem a qualidade do código e transformem dados em insights estratégicos para a tomada de decisão.
 <br>
-🔲 Dedicado e comprometido, meu objetivo é me tornar Engenheiro de Dados — com bases sólidas em pipelines e arquitetura — e evoluir para a Ciência de Dados, aplicando modelos preditivos e IA para gerar impacto real.
+🔲 Dedicado e comprometido, meu objetivo é evoluir como Desenvolvedor Fullstack — construindo aplicações robustas, escaláveis e orientadas a dados, unindo backend, frontend e IA para gerar impacto real.
 #
 
 <img src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=mateus-pcosta&theme=apprentice" width="64%" />&nbsp;<img src="http://github-profile-summary-cards.vercel.app/api/cards/stats?username=mateus-pcosta&theme=apprentice" width="31%" />
